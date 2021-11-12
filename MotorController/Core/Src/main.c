@@ -49,7 +49,8 @@
 /* USER CODE BEGIN PV */
 uint8_t rxBuffer[RX_BUFFER_SIZE];
 SerialLine serialLine;
-MotorController m;
+FlipperController fc;
+TrackController tc;
 int cnt = 0;
 int plen;
 /* USER CODE END PV */
@@ -81,7 +82,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  initSerialLine(&serialLine, 1, (uint8_t*)&m, sizeof(MotorController), USART3);
+  //initSerialLine(&serialLine, 1, (uint8_t*)&fc, sizeof(fc), USART3);
+  initSerialLine(&serialLine, 2, (uint8_t*)&tc, sizeof(tc), USART3);
   /* USER CODE END Init */
 
   /* Configure the system clock */
