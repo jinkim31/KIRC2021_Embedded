@@ -1,0 +1,11 @@
+stm32f4xx_ll_usart.h:1815:26:LL_USART_IsActiveFlag_TXE	16	static
+stm32f4xx_ll_usart.h:2427:22:LL_USART_TransmitData8	16	static
+serial_line.c:15:6:initSerialLine	24	static
+serial_line.c:27:5:pushPacket	32	static
+serial_line.c:41:5:pushByte	40	static
+serial_line.c:204:6:writePacket	32	static
+serial_line.c:213:6:bufferPush	16	static
+serial_line.c:223:6:injectValue	72	static
+serial_line.c:279:6:freeSerialLine	16	static
+serial_line.c:284:16:update_crc	536	static
+serial_line.c:332:6:clearBuffer	16	static

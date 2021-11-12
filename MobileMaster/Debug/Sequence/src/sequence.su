@@ -1,0 +1,139 @@
+char_traits.h:329:7:static std::size_t std::char_traits<char>::length(const char_type*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+basic_string.h:6589:3:std::string std::__cxx11::to_string(double)	40	static
+std_function.h:255:5:std::_Function_base::_Function_base()	16	static
+std_function.h:257:5:std::_Function_base::~_Function_base()	16	static
+std_function.h:263:10:bool std::_Function_base::_M_empty() const	16	static
+shared_ptr_base.h:303:5:void std::_Sp_counted_base<_Lp>::_M_add_ref_copy() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr_base.h:308:5:void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+sequence_core.h:152:10:void seq::Sequence::setAsOrigin(bool)	16	static
+sequence_core.h:155:12:std::string seq::Sequence::getName()	16	static
+sequence_core.h:222:13:seq::Block::~Block()	16	static
+sequence_core.h:222:13:virtual seq::Block::~Block()	16	static
+sequence.cpp:3:1:seq::block::Print::Print(const string&)	16	static
+sequence.cpp:9:6:virtual bool seq::block::Print::update(seq::SpinInfo)	24	static
+sequence.cpp:15:8:virtual std::string seq::block::Print::generateDebugName()	40	static
+sequence.cpp:20:6:virtual void seq::block::Print::reset()	16	static
+std_function.h:369:11:std::function<void()>::~function()	16	static
+sequence_util.h:11:7:seq::Timeout::~Timeout()	16	static
+sequence.cpp:25:1:seq::block::Delay::Delay(double)	24	static
+sequence.cpp:30:6:virtual bool seq::block::Delay::update(seq::SpinInfo)	24	static
+sequence.cpp:39:6:virtual void seq::block::Delay::reset()	16	static
+sequence.cpp:44:8:virtual std::string seq::block::Delay::generateDebugName()	120	static
+sequence.cpp:49:1:seq::block::Function::Function(std::function<void()>)	16	static
+sequence.cpp:54:6:virtual bool seq::block::Function::update(seq::SpinInfo)	24	static
+sequence.cpp:60:6:virtual void seq::block::Function::reset()	16	static
+sequence.cpp:63:8:virtual std::string seq::block::Function::generateDebugName()	24	static
+shared_ptr_base.h:1169:7:std::__shared_ptr<_Tp, _Lp>::~__shared_ptr() [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:103:11:std::shared_ptr<seq::Condition>::~shared_ptr()	16	static
+shared_ptr_base.h:1080:11:std::__shared_ptr<_Tp, _Lp>& std::__shared_ptr<_Tp, _Lp>::operator=(const std::__shared_ptr<_Tp, _Lp>&) [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:103:11:std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = seq::Condition]	16	static
+sequence.cpp:68:1:seq::block::WaitFor::WaitFor(std::shared_ptr<seq::Condition>, double, std::function<void()>)	56	static
+shared_ptr_base.h:1167:7:std::__shared_ptr<_Tp, _Lp>::__shared_ptr(const std::__shared_ptr<_Tp, _Lp>&) [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:129:7:std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = seq::Condition]	16	static
+sequence.cpp:75:1:seq::block::WaitFor::WaitFor(std::shared_ptr<seq::Condition>, double)	48	static
+sequence.cpp:79:1:seq::block::WaitFor::WaitFor(std::shared_ptr<seq::Condition>)	24	static
+sequence.cpp:82:6:virtual bool seq::block::WaitFor::update(seq::SpinInfo)	56	static
+sequence.cpp:99:6:virtual void seq::block::WaitFor::reset()	16	static
+sequence.cpp:105:8:virtual std::string seq::block::WaitFor::generateDebugName()	56	static
+shared_ptr_base.h:1169:7:std::__shared_ptr<_Tp, _Lp>::~__shared_ptr() [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:103:11:std::shared_ptr<seq::Sequence>::~shared_ptr()	16	static
+shared_ptr_base.h:1080:11:std::__shared_ptr<_Tp, _Lp>& std::__shared_ptr<_Tp, _Lp>::operator=(const std::__shared_ptr<_Tp, _Lp>&) [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:103:11:std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = seq::Sequence]	16	static
+sequence.cpp:114:1:seq::block::SequenceBlock::SequenceBlock(std::shared_ptr<seq::Sequence>)	16	static
+sequence.cpp:120:1:seq::block::SequenceBlock::SequenceBlock()	16	static
+sequence.cpp:125:1:seq::block::SequenceBlock::~SequenceBlock()	16	static
+sequence.cpp:125:1:virtual seq::block::SequenceBlock::~SequenceBlock()	16	static
+sequence.cpp:130:6:virtual bool seq::block::SequenceBlock::update(seq::SpinInfo)	24	static
+sequence.cpp:135:6:virtual void seq::block::SequenceBlock::reset()	16	static
+sequence.cpp:141:6:virtual void seq::block::SequenceBlock::init(bool)	24	static
+sequence.cpp:147:8:virtual std::string seq::block::SequenceBlock::generateDebugName()	120	static
+sequence.cpp:150:6:virtual void seq::block::SequenceBlock::print()	40	static
+sequence.cpp:156:6:void seq::block::SequenceBlock::setSequence(std::shared_ptr<seq::Sequence>)	16	static
+shared_ptr_base.h:1167:7:std::__shared_ptr<_Tp, _Lp>::__shared_ptr(const std::__shared_ptr<_Tp, _Lp>&) [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr.h:129:7:std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = seq::Sequence]	16	static
+sequence.cpp:162:1:seq::block::LoopSequence::LoopSequence(std::shared_ptr<seq::Condition>, double, std::function<void()>, std::shared_ptr<seq::Sequence>)	64	static
+sequence.cpp:169:1:seq::block::LoopSequence::LoopSequence(std::shared_ptr<seq::Condition>, double, std::shared_ptr<seq::Sequence>)	64	static
+sequence.cpp:172:1:seq::block::LoopSequence::LoopSequence(std::shared_ptr<seq::Condition>, std::shared_ptr<seq::Sequence>)	40	static
+sequence.cpp:175:6:virtual bool seq::block::LoopSequence::update(seq::SpinInfo)	56	static
+sequence.cpp:196:8:virtual std::string seq::block::LoopSequence::generateDebugName()	96	static
+sequence.cpp:205:6:virtual void seq::block::LoopSequence::reset()	16	static
+sequence.cpp:211:1:seq::block::Debug::Debug(const string&)	16	static
+sequence.cpp:214:6:virtual bool seq::block::Debug::update(seq::SpinInfo)	48	static
+sequence.cpp:221:8:virtual std::string seq::block::Debug::generateDebugName()	40	static
+sequence.cpp:226:6:virtual void seq::block::Debug::reset()	16	static
+sequence.cpp:231:1:seq::block::WaitForBroadcast::WaitForBroadcast(std::string, double, std::function<void()>)	56	static
+sequence.cpp:237:1:seq::block::WaitForBroadcast::WaitForBroadcast(std::string, double)	64	static
+sequence.cpp:241:1:seq::block::WaitForBroadcast::WaitForBroadcast(std::string)	40	static
+sequence.cpp:245:6:virtual bool seq::block::WaitForBroadcast::update(seq::SpinInfo)	56	static
+sequence.cpp:256:6:virtual void seq::block::WaitForBroadcast::reset()	16	static
+sequence.cpp:261:8:virtual std::string seq::block::WaitForBroadcast::generateDebugName()	40	static
+sequence.cpp:266:6:virtual bool seq::block::Broadcast::update(seq::SpinInfo)	48	static
+sequence.cpp:272:6:virtual void seq::block::Broadcast::reset()	16	static
+sequence.cpp:277:1:seq::block::Broadcast::Broadcast(std::string, bool)	24	static
+sequence.cpp:281:8:virtual std::string seq::block::Broadcast::generateDebugName()	40	static
+sequence.cpp:286:6:virtual bool seq::block::StartSequence::update(seq::SpinInfo)	48	static
+sequence.cpp:292:6:virtual void seq::block::StartSequence::reset()	16	static
+sequence.cpp:295:1:seq::block::StartSequence::StartSequence(std::string)	16	static
+string_conversions.h:99:5:) [with _String = std::__cxx11::basic_string<char>; _CharT = char]	44	dynamic
+basic_string.h:6097:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	40	static
+basic_string.h:6109:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+shared_ptr_base.h:733:7:std::__shared_count<_Lp>::__shared_count(const std::__shared_count<_Lp>&) [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr_base.h:727:7:std::__shared_count<_Lp>::~__shared_count() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+basic_string.tcc:1158:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+basic_string.h:6121:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+std_function.h:396:7:)>::function() [with _Res = void; _ArgTypes = {}]	16	static
+std_function.h:462:7:)>&) [with _Res = void; _ArgTypes = {}]	32	static
+std_function.h:683:5:) const [with _Res = void; _ArgTypes = {}]	16	static
+shared_ptr.h:127:17:constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = seq::Condition]	16	static
+shared_ptr_base.h:741:7:std::__shared_count<_Lp>& std::__shared_count<_Lp>::operator=(const std::__shared_count<_Lp>&) [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	24	static
+std_function.h:653:5:)>&) [with _Res = void; _ArgTypes = {}]	16	static
+std_function.h:403:7:)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {}]	16	static
+shared_ptr_base.h:1012:7:std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::element_type* std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::operator->() const [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single; bool <anonymous> = false; bool <anonymous> = false]	16	static
+shared_ptr.h:127:17:constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = seq::Sequence]	16	static
+shared_ptr_base.h:1012:7:std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::element_type* std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::operator->() const [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single; bool <anonymous> = false; bool <anonymous> = false]	16	static
+basic_string.h:625:9:std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with _InputIterator = char*; <template-parameter-2-2> = void; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = std::__cxx11::basic_string<char>&]	16	static
+basic_string.h:263:9:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator) [with _InIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+std_function.h:547:12:)>&) [with _Res = void; _ArgTypes = {}]	16	static
+shared_ptr_base.h:1118:17:constexpr std::__shared_ptr<_Tp, _Lp>::__shared_ptr() [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+std_function.h:564:16:)>::operator bool() const [with _Res = void; _ArgTypes = {}]	16	static
+shared_ptr_base.h:1020:7:std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::element_type* std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::_M_get() const [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single; bool <anonymous> = false; bool <anonymous> = false]	16	static
+shared_ptr_base.h:1118:17:constexpr std::__shared_ptr<_Tp, _Lp>::__shared_ptr() [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr_base.h:1020:7:std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::element_type* std::__shared_ptr_access<_Tp, _Lp, <anonymous>, <anonymous> >::_M_get() const [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single; bool <anonymous> = false; bool <anonymous> = false]	16	static
+basic_string.h:243:9:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct_aux(_InIterator, _InIterator, std::__false_type) [with _InIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	40	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = std::_Any_data&]	16	static
+move.h:182:5:typename std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> >::value>::type std::swap(_Tp&, _Tp&) [with _Tp = std::_Any_data]	24	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = bool (*&)(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)]	16	static
+move.h:182:5:typename std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> >::value>::type std::swap(_Tp&, _Tp&) [with _Tp = bool (*)(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)]	24	static
+move.h:99:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = void (*&)(const std::_Any_data&)]	16	static
+move.h:182:5:typename std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> >::value>::type std::swap(_Tp&, _Tp&) [with _Tp = void (*)(const std::_Any_data&)]	24	static
+shared_ptr_base.h:616:17:constexpr std::__shared_count<_Lp>::__shared_count() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr_base.h:1309:7:std::__shared_ptr<_Tp, _Lp>::element_type* std::__shared_ptr<_Tp, _Lp>::get() const [with _Tp = seq::Condition; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+shared_ptr_base.h:1309:7:std::__shared_ptr<_Tp, _Lp>::element_type* std::__shared_ptr<_Tp, _Lp>::get() const [with _Tp = seq::Sequence; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+type_traits.h:152:5:bool __gnu_cxx::__is_null_pointer(_Type*) [with _Type = char]	16	static
+stl_iterator_base_funcs.h:138:5:typename std::iterator_traits<_Iterator>::difference_type std::distance(_InputIterator, _InputIterator) [with _InputIterator = char*]	32	static
+stl_iterator_base_types.h:205:5:constexpr typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&) [with _Iter = char*]	16	static
+stl_iterator_base_funcs.h:98:5:constexpr typename std::iterator_traits<_Iterator>::difference_type std::__distance(_RandomAccessIterator, _RandomAccessIterator, std::random_access_iterator_tag) [with _RandomAccessIterator = char*]	24	static
+sequence.h:164:7:seq::block::StartSequence::~StartSequence()	16	static
+sequence.h:164:7:virtual seq::block::StartSequence::~StartSequence()	16	static
+sequence.h:150:7:seq::block::Broadcast::~Broadcast()	16	static
+sequence.h:150:7:virtual seq::block::Broadcast::~Broadcast()	16	static
+sequence.h:131:7:seq::block::WaitForBroadcast::~WaitForBroadcast()	16	static
+sequence.h:131:7:virtual seq::block::WaitForBroadcast::~WaitForBroadcast()	16	static
+sequence.h:112:7:seq::block::LoopSequence::~LoopSequence()	16	static
+sequence.h:112:7:virtual seq::block::LoopSequence::~LoopSequence()	16	static
+sequence.h:69:7:seq::block::WaitFor::~WaitFor()	16	static
+sequence.h:69:7:virtual seq::block::WaitFor::~WaitFor()	16	static
+sequence.h:55:7:seq::block::Function::~Function()	16	static
+sequence.h:55:7:virtual seq::block::Function::~Function()	16	static
+sequence.h:41:7:seq::block::Delay::~Delay()	16	static
+sequence.h:41:7:virtual seq::block::Delay::~Delay()	16	static
+sequence.h:27:7:seq::block::Debug::~Debug()	16	static
+sequence.h:27:7:virtual seq::block::Debug::~Debug()	16	static
+sequence.h:13:7:seq::block::Print::~Print()	16	static
+sequence.h:13:7:virtual seq::block::Print::~Print()	16	static
+sequence.cpp:298:1:void __static_initialization_and_destruction_0(int, int)	16	static
+sequence.cpp:298:1:cpp)	8	static
+sequence.cpp:298:1:cpp)	8	static

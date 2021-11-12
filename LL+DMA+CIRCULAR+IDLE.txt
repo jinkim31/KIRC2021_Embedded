@@ -1,0 +1,54 @@
+STM32F446RE USART LL+DMA
+
+IN CUBEMX Pinout & Configuration
+1. Mode : Asynchronous
+2. DMA settings
+-Add
+-Mode:Circular
+-Stream칸에 DMAx Stream x을 기억해 놓고 메인문 LL코드에 사용하기 (여기서는 DMA1 Stream 1으로 나옴)
+3. NVIC Settings
+-USART global interrupt:Check
+4.Parameter Settings
+-Baud rate
+
+IN CUBEMX Project Manager
+1. Advanced settings -> USART : LL
+
+IN main.c
+/* USER CODE BEGIN PD */
+#define RX_BUFFER_SIZE 300
+/* USER CODE END PD */
+
+/* USER CODE BEGIN PV */
+uint8_t rxBuffer[RX_BUFFER_SIZE];
+/* USER CODE END PV */
+
+/* USER CODE BEGIN 2 */
+LL_DMA_SetMemoryAddress(DMA1, LL_DMA_STREAM_1, rxBuffer);
+LL_DMA_SetPeriphAddress(DMA1, LL_DMA_STREAM_1, &USART3->DR);
+LL_DMA_SetDataLength(DMA1, LL_DMA_STREAM_1, RX_BUFFER_SIZE);
+LL_DMA_EnableStream(DMA1, LL_DMA_STREAM_1);
+LL_USART_EnableDMAReq_RX(USART3);
+LL_USART_EnableIT_IDLE(USART3);
+/* USER CODE END 2 */
+
+IN stm32f4xx_it.c
+void USART3_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+if (LL_USART_IsActiveFlag_IDLE(USART3)) 
+	{
+		int len = RX_BUFFER_SIZE - LL_DMA_GetDataLength(DMA1, LL_DMA_CHANNEL_5);
+
+		//Example. extern variables you want to use in this file.
+		pushPacket(&serialLine, rxBuffer, len);
+
+		LL_USART_ClearFlag_IDLE(USART3);
+		LL_DMA_DisableStream(DMA1, LL_DMA_STREAM_1);
+		LL_DMA_SetDataLength(DMA1, LL_DMA_STREAM_1, RX_BUFFER_SIZE);
+		LL_DMA_EnableStream(DMA1, LL_DMA_STREAM_1);
+	}
+
+	if (LL_USART_IsActiveFlag_ORE(USART3)) LL_USART_ClearFlag_ORE(USART3);
+  /* USER CODE END USART1_IRQn 0 */
+}

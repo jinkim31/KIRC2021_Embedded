@@ -1,0 +1,8 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+sequence_embedded.cpp:3:8:virtual double EmbeddedChronometer::getTime()	16	static
+sequence_embedded.cpp:8:6:void EmbeddedChronometer::setCurrentTimeVar(double*)	16	static
+chronometer.h:8:7:constexpr Chronometer::Chronometer()	16	static
+sequence_embedded.cpp:13:1:EmbeddedChronometer::EmbeddedChronometer(double*)	16	static
+sequence_embedded.cpp:15:1:void __static_initialization_and_destruction_0(int, int)	16	static
+sequence_embedded.cpp:15:1:cpp)	8	static
+sequence_embedded.cpp:15:1:cpp)	8	static
